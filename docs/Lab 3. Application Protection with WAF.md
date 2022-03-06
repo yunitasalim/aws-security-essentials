@@ -10,7 +10,7 @@ This CloudFormation stack will take approximately 5 minutes to complete.
 
 https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-east-1.s3.us-east-1.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template
 
-![3.1.1](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.1.1.png)
+![3.1.1](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.1.1.png)
 
 2. In Step 2, enter the Stack name and leave the other parameter as default, select **Next**.
 
@@ -18,15 +18,15 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?
 
 4. In the Step 4, check all the capabilities and select **Create stack**.
 
-   ![3.1.4](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.1.4.png)
+   ![3.1.4](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.1.4.png)
 
 5. Wait till the cloudformation has been deployed successfully. Go to the stacks and check the output in the TheSiteUrl fields.
 
-   ![3.1.5](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.1.5.png)
+   ![3.1.5](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.1.5.png)
 
 6. Open TheSiteUrl on  the new tab to check if your OWASP Juice Shop application has been deployed correctly.
 
-   ![3.1.6](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.1.6.png)
+   ![3.1.6](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.1.6.png)
 
 
 
@@ -36,35 +36,35 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?
 
 1. Go back to AWS console, select **Create web ACL**
 
-![3.2.1](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.2.1.png)
+![3.2.1](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.2.1.png)
 
 2. Input `waf-workshop-juice-shop` under the Name fields, `web ACL for the aws-waf-workshop` under Description Field. In the Resource type, choose **Cloudfront distributions**. In the associated AWS resources, choose the Cloudfront distribution deployed by the CloudFormation template in the previous step.
 
-![3.2.2](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.2.2.png)
+![3.2.2](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.2.2.png)
 
 3. Select **Add rules** to and pick **Add managed rule groups**
 
-![3.1.9](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.1.9.png)
+![3.1.9](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.1.9.png)
 
 4. Select **Core rule set** and **SQL database** under the **AWS managed rule groups**
 
-![3.1.10](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.1.10.png)
+![3.1.10](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.1.10.png)
 
 
 
 5. Tick both of the rules selected and select **Next**.
 
-   ![3.2.5](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.2.5.png)
+   ![3.2.5](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.2.5.png)
 
 6. Leave the rule priority as default and select **Next**.
 
-   ![3.2.6](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.2.6.png)
+   ![3.2.6](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.2.6.png)
 
 7. Leave the Cloudwatch metrics setting as default.
 
 8. Review the WAF ACL and select **Create webACL**
 
-   ![3.2.8](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.2.8.png)
+   ![3.2.8](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.2.8.png)
 
 
 
@@ -159,14 +159,11 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?
 
 1. Go to the WAF console, select Web ACLs on the menu and choose the **waf-workshop-juice-shop** Web ACL we created on the previous section.
 
-![3.3.1](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.3.1.png)
+![3.3.1](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.3.1.png)
 
 2. Explore the metric dashboard with the sampled request.
 
-   ![3.3.2](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/1.2.7.png3.3.2.png)
-
-   
-
+   ![3.3.2](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/waf/3.3.2.png)
    
 
    
