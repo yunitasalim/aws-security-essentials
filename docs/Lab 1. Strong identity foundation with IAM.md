@@ -13,7 +13,7 @@ You begin by creating an IAM customer managed policy that denies all permissions
 
 3. In the navigation pane, choose **Policies**, and then choose **Create policy**.
 
-   ![1.1.3](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/1.1.3.png)
+   ![1.1.3](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/iam/1.1.3.png)
 
    
 
@@ -120,7 +120,7 @@ Create a user group whose members have full access to all Amazon EC2 actions if 
 
 3. In the navigation pane, choose **Users**, and then choose **Add Users**.
 
-   ![1.2.3](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/1.2.3.png)
+   ![1.2.3](https://github.com/yunitasalim/aws-security-essentials/blob/main/img/iam/1.2.3.png)
 
 4. Type the name mfa_user, check **Password- AWS Management Console Access**, input your default password,  select **Next: Permissions**
 
