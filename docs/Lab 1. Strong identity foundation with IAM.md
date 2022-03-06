@@ -104,7 +104,7 @@ You begin by creating an IAM customer managed policy that denies all permissions
 
 6. On the **Review** page, type `Force_MFA` for the policy name. For the policy description, type `This policy allows users to manage their own passwords and MFA devices but nothing else unless they authenticate with MFA` Review the policy **Summary** to see the permissions granted by your policy, scroll to the bottom of the page, and then choose **Create policy** to save your work. 
 
-   ![image-20210916162831724](/Users/syunita/Library/Application Support/typora-user-images/image-20210916162831724.png)
+   !(https://github.com/yunitasalim/aws-security-essentials/blob/main/img/iam/1.1.5.png)
 
 7. The new policy appears in the list of managed policies and is ready to attach.
 
